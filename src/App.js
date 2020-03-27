@@ -1,23 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import PropTypes from 'prop-types'
+import logo from './logo.svg'
+import './App.css'
 
-function App(props) {
-  function test(){
+function App({ aaa }) {
+  function test() {
     return 'hogeてすと'
   }
 
   const test2 = 'asdfjagsdk'
-
-  console.log(props)
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          {props.aaa.hoge}<br/>
-          Edit <code>src/App.js</code> and save to reload.{test()} {test2}
+          {aaa.hoge}
+          <br />
+          Edit
+          {' '}
+          <code>src/App.js</code>
+          {' '}
+          and save to reload.
+          {test()}
+          {' '}
+          {test2}
         </p>
         <a
           className="App-link"
@@ -29,7 +36,17 @@ function App(props) {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+App.defaultProps = {
+  aaa: {}
+}
+
+App.propTypes = {
+  aaa: PropTypes.shape({
+    hoge: PropTypes.string
+  })
+}
+
+export default App
