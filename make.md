@@ -44,6 +44,13 @@ npx eslint --init
 vueと違ってpropsの型チェック機能が外部ライブラリなので追加する。
 使わないとeslintでエラーが出る等の弊害があるので。
 
-```
+```console
 npm install --save prop-types
+```
+
+## react routerのインストール
+
+routerも別コンポーネントのため、別途インストールする
+```console
+npm install react-router-dom
 ```
