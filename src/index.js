@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const sample = {
+  hoge: 'fuga'
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App aaa={ sample } />
   </React.StrictMode>,
   document.getElementById('root')
 );
