@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,16 +17,6 @@ function App() {
       </Router>
     </div>
   )
-}
-
-App.defaultProps = {
-  aaa: {}
-}
-
-App.propTypes = {
-  aaa: PropTypes.shape({
-    hoge: PropTypes.string
-  })
 }
 
 export default App
