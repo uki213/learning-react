@@ -9,7 +9,7 @@ import Index from './pages/index/index'
 import SubpageIndex from './pages/subpage/index/index'
 import SubpageNestIndex from './pages/subpage/nestpage/index'
 
-import './App.css'
+import './App.scss'
 
 function App() {
   return (

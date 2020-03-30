@@ -54,3 +54,11 @@ routerも別コンポーネントのため、別途インストールする
 ```console
 npm install react-router-dom
 ```
+
+## sassのインストール
+
+sassは公式を見るとnode-sassと書いているが、
+node-sassは更新されないので、dart-sassを入れる
+```console
+npm install --save sass
+```
